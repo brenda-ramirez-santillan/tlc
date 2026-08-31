@@ -40,9 +40,4 @@
     <text x="71" y="492">Autre</text>
   </g>
 
-  <rect x="53" y="558" width="148" height="58" rx="2" fill="#0565bf" filter="url(#shadow)"/>
-  <text x="127" y="593" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ffffff">VALIDER</text>
-
-  <rect x="801" y="560" width="146" height="54" rx="2" fill="#ffffff" stroke="#ff2441" stroke-width="2"/>
-  <text x="874" y="592" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ff2441">RETOUR</text>
 </svg>
