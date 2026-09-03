@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1008" height="720" viewBox="0 0 1008 720">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#000000" flood-opacity="0.16"/>
+    </filter>
+    <style>
+      .font { font-family: Arial, Helvetica, sans-serif; fill:#2b2f33; }
+      .title { font-size:28px; fill:#ffffff; }
+      .h2 { font-size:24px; }
+      .body { font-size:21px; }
+      .disabled { font-size:21px; fill:#777777; text-decoration:line-through; }
+      .missing-main { font-size:20px; fill:#666666; font-weight:600; }
+      .missing-sub { font-size:17px; fill:#8a8a8a; }
+    </style>
+  </defs>
+
+  <!-- Fond -->
+  <rect width="1008" height="720" fill="#f6f6f6"/>
+
+  <!-- En-tête -->
+  <rect x="1" y="4" width="1000" height="78" rx="2" fill="#0b7dbc"/>
+  <text x="21" y="51" class="font title">Questionnaires</text>
+  <text x="965" y="49" font-family="Arial, Helvetica, sans-serif"
+        font-size="32" font-weight="bold" fill="#86c5e7">×</text>
+
+  <!-- Bloc informations -->
+  <rect x="21" y="102" width="960" height="157" rx="4"
+        fill="#ffffff" filter="url(#shadow)"/>
+  <text x="46" y="153" class="font h2">Télécontrôle assuré(e)</text>
+  <text x="46" y="186" class="font body">Nom: Convocation Service médical</text>
+  <text x="46" y="216" class="font body">Date: 31.08.2026 12:00 (heure de Paris)</text>
+
+  <!-- Bloc questionnaire -->
+  <rect x="21" y="270" width="960" height="424" rx="4"
+        fill="#ffffff" filter="url(#shadow)"/>
+
+  <text x="46" y="321" class="font h2">Questions préalables à la réunion</text>
+  <text x="46" y="363" class="font body">Objet du télécontrôle</text>
+
+  <!-- Options disponibles -->
+  <g class="font body">
+    <circle cx="53" cy="392" r="7" fill="none" stroke="#7b7b7b" stroke-width="1.4"/>
+    <text x="71" y="401">Arrêt de travail</text>
+
+    <circle cx="53" cy="423" r="7" fill="none" stroke="#7b7b7b" stroke-width="1.4"/>
+    <text x="71" y="432">Reconnaissance maladie professionnelle</text>
+
+    <circle cx="53" cy="453" r="7" fill="none" stroke="#7b7b7b" stroke-width="1.4"/>
+    <text x="71" y="462">Demande d’accord préalable</text>
+
+    <circle cx="53" cy="483" r="7" fill="none" stroke="#7b7b7b" stroke-width="1.4"/>
+    <text x="71" y="492">Autre</text>
+  </g>
+
+  <!-- Options plus disponibles -->
+  <text x="71" y="528" class="font disabled">Demande d’invalidité</text>
+  <text x="71" y="562" class="font disabled">Demande d’inaptitude</text>
+  <text x="71" y="596" class="font disabled">Demande de rechute</text>
+
+  <!-- Non saisie : état de donnée manquante, pas une option -->
+  <g>
+    <!-- séparation visuelle légère -->
+    <line x1="46" y1="619" x2="955" y2="619"
+          stroke="#e3e6e8" stroke-width="1"/>
+
+    <!-- icône information -->
+    <circle cx="56" cy="650" r="11"
+            fill="#f2f3f4" stroke="#9aa0a6" stroke-width="1.2"/>
+    <text x="56" y="656"
+          text-anchor="middle"
+          font-family="Arial, Helvetica, sans-serif"
+          font-size="16"
+          font-weight="bold"
+          fill="#777777">i</text>
+
+    <text x="78" y="648" class="font missing-main">Non saisie</text>
+    <text x="78" y="672" class="font missing-sub">Objet du télécontrôle non renseigné</text>
+  </g>
+</svg>
